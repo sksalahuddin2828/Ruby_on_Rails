@@ -1,3 +1,7 @@
+# This code also uses the ruby-opencv gem, so make sure you have it installed.
+# You can install it by executing gem install ruby-opencv.
+# The code assumes that you have the OpenCV library installed on your system.
+
 require 'opencv'
 
 cap = OpenCV::CvCapture.open(0)
