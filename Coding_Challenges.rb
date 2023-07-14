@@ -57,8 +57,20 @@ print "Fibonacci series: "
 
 # 4. Returning the Nth Value from the Fibonacci Sequence:
 
+def fibonacci(n)
+  return n if n <= 1
+
+  fibonacci(n - 1) + fibonacci(n - 2)
+end
+
+n = 10
+fibonacci_number = fibonacci(n)
+puts fibonacci_number
+
 #----------------------------------------------------------------------------------------------------------------------------------------------
 
 # 5. Finding the Average of Numbers:
 
-
+numbers = [10, 20, 30, 40, 50]
+average = numbers.sum.to_f / numbers.length
+puts "Average: #{average}"
