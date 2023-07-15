@@ -11,13 +11,14 @@ else
   puts "'#{user_input}' is not a palindrome."
 end
 
-//-----------------------------------------------------------------------------
+#----------------------------------------------------------------
 
-function is_palindrome($s) {
-    $s = preg_replace("/[^0-9a-zA-Z]/", "", strtolower($s));
-    return $s === strrev($s);
-}
+def is_palindrome(s)
+  s = s.gsub(/[^0-9a-zA-Z]/, '').downcase
+  s == s.reverse
+end
 
-echo is_palindrome("A man, a plan, a canal: Panama") ? 'true' : 'false';  
+puts is_palindrome("A man, a plan, a canal: Panama")  
 
-// Output: true
+# Output: true
+
